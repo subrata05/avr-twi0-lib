@@ -37,6 +37,7 @@ A lightweight I2C library built on the TWI0 peripheral of the **ATmega328PB**. T
 
 ```c
 #define F_CPU 16000000UL
+#define F_SCL 100000UL
 #define TWBR_VALUE (((F_CPU / F_SCL) - 16) / (2 * 4))
 ```
 
