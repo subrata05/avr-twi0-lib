@@ -40,6 +40,8 @@ A lightweight I2C library built on the TWI0 peripheral of the **ATmega328PB**. T
 #define TWBR_VALUE (((F_CPU / F_SCL) - 16) / (2 * 4))
 ```
 
+---
+
 ## Porting to Other AVRs
 
 The library uses `TWCR0`, `TWDR0`, `TWBR0`, and `TWSR0` specific to **ATmega328PB**. To use it with other AVRs (like ATmega328P):
